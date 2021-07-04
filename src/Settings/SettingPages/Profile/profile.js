@@ -2,13 +2,13 @@ import React from "react";
 
 import styled from "@emotion/styled";
 
-const InviteFriend = () => {
+const Profile = () => {
  
   return (
     <>
-    <div>This is the InviteFriend page</div>
+    <div>This is the Profile page</div>
     </>
   );
 };
 
-export default InviteFriend;
+export default Profile;

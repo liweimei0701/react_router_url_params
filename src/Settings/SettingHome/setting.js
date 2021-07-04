@@ -52,10 +52,7 @@ const Setting = () => {
       <SettingContiner>
         <SettingHeader>Setting</SettingHeader>
         <div>
-          Barneytheawsome@gmail.com
-          <Link to="business-profile" style={{ marginLeft: "10px" }}>
-            Go to Profile
-          </Link>
+          test@gmail.com
         </div>
         <Grid container direction="row" justify="center" style={{width:"600px",margin: "50px auto"}}>
           {SettingData.map((item) => (

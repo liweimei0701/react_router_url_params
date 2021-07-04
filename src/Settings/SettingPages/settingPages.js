@@ -4,10 +4,10 @@ import { BrowserRouter as Router, useParams, Link } from "react-router-dom";
 
 import styled from "@emotion/styled";
 
-import BusinessDetails from "./BusinessDetails/businessDetails";
+import Profile from "./Profile/profile";
 import PersonalDetials from "./PersonalDetails/personalDetails";
 import Security from "./Security/security";
-import InviteFriend from "./InviteFriend/inviteFeirnd";
+import Account from "./Account/account";
 
 const SettingContiner = styled.div`
 	display: flex;
@@ -26,14 +26,14 @@ const SettingPages = () => {
 		case "personal-details":
 			title = "Personal Details";
 			break;
-		case "business-details":
-			title = "Business Details";
+		case "profile":
+			title = "Profile";
 			break;
 		case "security":
 			title = "Login & Security";
 			break;
-		case "invite":
-			title = "Invite a friend";
+		case "account":
+			title = "Account";
 			break;
 		default:
 			break;
@@ -51,9 +51,9 @@ const SettingPages = () => {
 				)}
 			</Breadcrumbs>
 			{id === "personal-details" && <PersonalDetials />}
-			{id === "business-details" && <BusinessDetails />}
+			{id === "profile" && <Profile />}
 			{id === "security" && <Security />}
-			{id === "invite" && <InviteFriend />}
+			{id === "account" && <Account />}
 		</SettingContiner>
 	);
 };
